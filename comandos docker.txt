@@ -1,9 +1,7 @@
 docker run -d -p 3000:80 nginx
 
 vai rodar o nginx sem interromper meu terminal porque estou usando o -d 
-vai usar a porta 3000 do meu computador 
-e vai usar a porta 80 do servidor 
-
+vai expor a porta 3000 do meu computador pois estou usando o comando -p 3000:80
 
 docker ps - vai listar os meus containers em usando
 
@@ -34,3 +32,10 @@ Parâmetro	Explicação
 
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
+
+
+docker logs nginx_app - rotorna os logs gerados 
+
+docker logs -f nginx_app - para manter os logs atualizando na tela usa o comando -f
+
+docker rm intelligent_euler - comando para remover/excluir um container
